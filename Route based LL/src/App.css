@@ -1,0 +1,74 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --nav-bg: #f0f0f0;
+  --link-color: #007bff;
+  --button-bg: #007bff;
+  --button-text: #ffffff;
+}
+
+body.dark {
+  --bg-color: #1a1a1a;
+  --text-color: #f0f0f0;
+  --nav-bg: #333333;
+  --link-color: #66b3ff;
+  --button-bg: #66b3ff;
+  --button-text: #1a1a1a;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.app {
+  text-align: center;
+}
+
+nav {
+  background-color: var(--nav-bg);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--link-color);
+}
+
+button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.content {
+  padding: 2rem;
+}
+
+.loading {
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
